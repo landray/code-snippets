@@ -1,3 +1,3 @@
-# Solo Snippets
+# Solo Snippetsfasfasfasfas
 
 this is solo snippets
