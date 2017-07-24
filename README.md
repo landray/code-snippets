@@ -1,3 +1,3 @@
-# Solo Snippets
+# KK Code snippets of KK products
 
-this is solo snippets
+Code snippets of KK products for editors
