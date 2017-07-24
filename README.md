@@ -9,7 +9,7 @@
 
 已有的可用于 KK 产品开发的代码片段插件：
 
-* [Solo Code Snippets for Sublime Text](/tree/solo-sublime)
-* [KK JS-SDK Code Snippets for Sublime Text](/tree/jssdk-sublime)
+* [Solo Code Snippets for Sublime Text](https://github.com/landray/code-snippets/tree/solo-sublime)
+* [KK JS-SDK Code Snippets for Sublime Text](https://github.com/landray/code-snippets/tree/jssdk-sublime)
 
 请根据自己使用的代码编辑器和正在开发的 KK 产品选择适合自己的代码片段插件，插件具体的安装和使用方法请参考各插件自身的说明文档
