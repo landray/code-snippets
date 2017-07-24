@@ -10,12 +10,11 @@ Sublime Text Code Snippets for [Solo](https://github.com/landray/Solo) single-fi
 ## Notice
 
 * Solo is based on `Vue`, you must install the `Vue Syntax Highlight` package via Package Control before using the `Solo Snippets`.
+* `Solo Snippets` is only suitable for single-file vuejs components. Their file extension is `vue`
 
 ## Usage
 1.  Open a blank file, and set the file syntax to `Vue Component`.
 2.  Type "spage" and press TAB.
-
-
 
 ## Lists of Snippets
 
