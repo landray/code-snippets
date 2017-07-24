@@ -1,3 +1,2 @@
-# Solo Snippetsfasfasfasfas
-
-this is solo snippets
+# KK JS-SDK Snippets
+this is KK JS-SDK snippets
