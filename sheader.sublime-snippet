@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+<page-header>${1:i am header}</page-header>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>spageheader</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html</scope>
+  <description>Solo 头部组件--容器模式</description>
+</snippet>

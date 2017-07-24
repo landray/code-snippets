@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+// Solo 即将返回的页面，viewData 可以是数组、对象、字符串等任意数据类型，
+// 不传递 viewName 则默认返回上一页
+this.\$router.back('${1:viewName}', {
+  viewData: ${2:{testKey: 'testData'\}}
+})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>srouterback</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+  <description>Solo 返回页面</description>
+</snippet>

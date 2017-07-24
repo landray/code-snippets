@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+<!-- page-footer 的 right-options.showMore 配置是否显示右侧的更多图标 -->
+<page-footer :right-options="{showMore: ${1:true}}">
+  ${2:i am footer}
+</page-footer>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>spagefooterconfig</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html</scope>
+  <description>Solo 底部组件--配置模式</description>
+</snippet>

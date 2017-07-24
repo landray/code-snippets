@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+// Solo 即将加载的页面，viewData 可以是数组、对象、字符串等任意数据类型，
+// 必须指定 viewName 加载页面的名字
+this.\$router.load('${1:viewName}', {
+  viewData: ${2:{testKey: 'testValue'\}}
+})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>srouterload</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+  <description>Solo 加载页面</description>
+</snippet>
