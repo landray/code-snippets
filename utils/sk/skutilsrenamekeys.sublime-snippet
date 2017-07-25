@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+this.\$kk.utils.renameKeys(obj, keysMap, [removeOldKeys])
+]]></content>
+	<tabTrigger>skutilsrenamekeys</tabTrigger>
+	<scope>source.js</scope>
+	<description>按keysMap中的关系，重命名 obj中的key</description>
+</snippet>

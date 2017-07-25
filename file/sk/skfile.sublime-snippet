@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+this.\$kk.File(filePath)
+]]></content>
+	<tabTrigger>skfile</tabTrigger>
+	<scope>source.js</scope>
+	<description>构造函数</description>
+</snippet>

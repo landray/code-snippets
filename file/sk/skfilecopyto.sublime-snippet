@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 拷贝文件
+* @options：object类型 包含源文件路径及目标路径的对象，详见文档
+* @成功回调：没有回调参数
+*/
+this.\$kk.file.copyTo(${1:options}, function () {${2}}, function (${3}) {});
+]]></content>
+	<tabTrigger>skfilecopyto</tabTrigger>
+	<scope>source.js</scope>
+	<description>拷贝文件</description>
+</snippet>

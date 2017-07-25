@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 获取应用图标,返回 icon图标链接。
+* @appCode: string类型 应用代码，可选，不填返回本身图标
+*/
+this.\$kk.app.getAppIcon(${1:appCode});
+]]></content>
+	<tabTrigger>skappgetappicon</tabTrigger>
+	<scope>source.js</scope>
+	<description>根据应用代码获取应用图标</description>
+</snippet>

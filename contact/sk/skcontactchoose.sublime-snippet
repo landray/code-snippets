@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 选择联系人
+* @mode: number类型 选择类型模式 默认值是1(人), 可选值还有2(电话号码),3(邮件)
+*/
+this.\$kk.contact.choose({mode: ${1}}, function (${2}) {}, function (${3}) {});
+]]></content>
+	<tabTrigger>skcontactchoose</tabTrigger>
+	<scope>source.js</scope>
+	<description>从手机通讯录选人</description>
+</snippet>

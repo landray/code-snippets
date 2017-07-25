@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 将文件内容转换为base64字符串
+* @filepath：string类型 文件路径（sdcard协议的）
+* @成功回调：回调参数是包含文本内容为base64字符串的对象
+*/
+this.\$kk.file.readAsBase64(${1:filepath}, function (${2}) {}, function (${3}) {});
+]]></content>
+	<tabTrigger>skfilereadasbase64</tabTrigger>
+	<scope>source.js</scope>
+	<description>将文件类容转换为base64字符串</description>
+</snippet>

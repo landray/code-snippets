@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 文件上传
+* @options：object类型 文件上传参数设置，详见文档
+*/ 
+var fileUpload = new kk.proxy.Upload(${1:options}, function (${2}) {}, function (${3}) {});
+// 上传开始
+fileUpload.start();
+]]></content>
+	<tabTrigger>kkproxyupload</tabTrigger>
+	<scope>source.js</scope>
+	<description>文件上传</description>
+</snippet>

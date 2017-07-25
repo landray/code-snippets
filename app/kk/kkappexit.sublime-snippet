@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+// 退出应用
+kk.app.exit();
+${1}
+]]></content>
+	<tabTrigger>kkappexit</tabTrigger>
+	<scope>source.js</scope>
+	<description>退出当前Web应用</description>
+</snippet>

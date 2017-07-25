@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 播放录音
+* @filePath：string类型 音频文件全路径
+  无成功回调，只有失败回调
+*/ 
+this.\$kk.media.playAudio(${1:filePath}, function (${2}) {});
+]]></content>
+	<tabTrigger>skmediaplayaudio</tabTrigger>
+	<scope>source.js</scope>
+	<description>播放录音</description>
+</snippet>

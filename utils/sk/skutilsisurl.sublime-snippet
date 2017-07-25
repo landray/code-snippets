@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 判断字符串是否为合法的浏览器网址
+* @str：string类型 需要判断的浏览器网址
+* @return：若为合法的网址则返回 true ，否则 false
+*/
+this.\$kk.utils.isURL(${1:str});
+]]></content>
+	<tabTrigger>skutilsisurl</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断字符串是否为合法的浏览器网址</description>
+</snippet>

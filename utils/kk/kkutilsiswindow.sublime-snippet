@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 判断变量是否为window对象
+* @obj：any类型  所要判断的变量
+* @return 若是window对象返回 true，否则返回 false
+*/
+kk.utils.isWindow(${1:obj});
+]]></content>
+	<tabTrigger>kkutilsiswindow</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断变量是否为window对象</description>
+</snippet>

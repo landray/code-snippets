@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+this.\$kk.file.info(filePath, done, [fail])
+]]></content>
+	<tabTrigger>skfileinfo</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取文件路径</description>
+</snippet>

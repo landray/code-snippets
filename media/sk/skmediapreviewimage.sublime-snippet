@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 预览图片
+* @options：object类型 配置参数
+  无成功回调，只有失败回调
+*/  
+this.\$kk.media.previewImage(${1:options}, function (${2}) {});
+]]></content>
+	<tabTrigger>skmediapreviewimage</tabTrigger>
+	<scope>source.js</scope>
+	<description>预览图片</description>
+</snippet>

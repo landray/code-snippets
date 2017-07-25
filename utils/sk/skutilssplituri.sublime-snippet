@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 分割URI 若分割成功，即返回一个数组
+* @str：string类型 需要解析的字符串
+* @return：一个URI的各个部分组成的数组，详见文档
+*/
+this.\$kk.utils.splitURI(${1:str});
+]]></content>
+	<tabTrigger>skutilssplituri</tabTrigger>
+	<scope>source.js</scope>
+	<description>分割URI</description>
+</snippet>

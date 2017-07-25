@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 获取分享链接
+* @options：object类型 分享链接的相关参数，详见文档
+*/
+var ${2:shareLink} = kk.share.getAppShareLink(${1:options});
+]]></content>
+	<tabTrigger>kksharegetappsharelink</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取分享链接</description>
+</snippet>

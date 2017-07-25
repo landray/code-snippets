@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 获取当前位置的坐标信息，包括经度、纬度、海拔
+* @成功回调：回调参数是一个包含坐标信息的对象，详见文档
+*/
+this.\$kk.location.getLocation(function (${1}) {}, function (${2}) {});
+]]></content>
+	<tabTrigger>sklocationgetlocation</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取当前位置的坐标信息</description>
+</snippet>

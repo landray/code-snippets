@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 扫描条形码
+* @成功回调：回调参数是一个包含条形码的内容的对象，详见文档
+*/
+this.\$kk.scaner.scanBarCode(function (${1}) {}, function (${2}) {});
+]]></content>
+	<tabTrigger>skscanerscanbarcode</tabTrigger>
+	<scope>source.js</scope>
+	<description>扫描条形码</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+// 获取应用数字图标
+this.\$kk.app.getBadge(function (${1}) {${2}});
+]]></content>
+	<tabTrigger>skappgetbadge</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取应用数字图标</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+// 获取客户端信息 
+var ${1:clientInfo} = kk.app.getClientInfo();
+]]></content>
+	<tabTrigger>kkappgetclientinfo</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取客户端信息</description>
+</snippet>

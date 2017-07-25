@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 判断当前页面是否有上一页
+* @成功回调：回调参数是一个包含是否有上一页的对象，详见文档
+*/
+kk.history.hasPrev(function (${1}) {});
+]]></content>
+	<tabTrigger>kkhistoryhasprev</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断当前页面是否有上一页</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 判断变量是否为函数
+* @fn：any类型  所要判断的变量
+* @return 若变量是函数返回 true，否则返回 false
+*/
+this.\$kk.utils.isFunction(${1:fn});
+]]></content>
+	<tabTrigger>skutilsisfunction</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断变量是否为函数</description>
+</snippet>

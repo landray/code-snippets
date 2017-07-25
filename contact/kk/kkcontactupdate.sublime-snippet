@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 更新联系人，修改联系人信息
+* @contactInfo：object类型 联系人信息，详见文档，联系人id必填
+* @成功回调：没有回调参数
+*/
+kk.contact.update(${1:contactInfo}, function () {${2}}, function (${3}) {});
+]]></content>
+	<tabTrigger>kkcontactupdate</tabTrigger>
+	<scope>source.js</scope>
+	<description>更新联系人信息</description>
+</snippet>

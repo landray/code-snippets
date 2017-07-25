@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 设置剪贴板内容
+* @text：string类型 剪贴板内容
+*/ 
+this.\$kk.device.setClipboard(${1:text});
+]]></content>
+	<tabTrigger>skdevicesetclipboard</tabTrigger>
+	<scope>source.js</scope>
+	<description>设置剪贴板内容</description>
+</snippet>

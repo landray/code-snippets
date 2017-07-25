@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 保存图片到相册
+* @filepath：string类型 要保存的照片路径
+* @成功回调：无回调参数
+*/
+kk.media.save2album({filepath: ${1}}, function () {${2}}, function () {${3}});
+]]></content>
+	<tabTrigger>kkmediasave2album</tabTrigger>
+	<scope>source.js</scope>
+	<description>保存图片到相册</description>
+</snippet>

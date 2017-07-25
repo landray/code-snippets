@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 获取某个网址中的cookie
+* @url: string类型 要获取cookie的url
+*/
+this.\$kk.app.getCookie({url: ${1}}, function () {${2}}, function () {${3}});
+]]></content>
+	<tabTrigger>skappgetcookie</tabTrigger>
+	<scope>source.js</scope>
+	<description>从webview中获取cookie</description>
+</snippet>

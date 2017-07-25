@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 获取设备屏幕显示方向
+* @成功回调：回调参数是字符串，
+* 可能值：portrait(竖屏)，landscape(横屏)，auto(自动旋转)
+*/
+this.\$kk.device.getOrientation(function (${1}) {}, function (${2}) {});
+]]></content>
+	<tabTrigger>skdevicegetorientation</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取设备屏幕旋转方向设置</description>
+</snippet>

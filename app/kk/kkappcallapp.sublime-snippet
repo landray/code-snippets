@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/* 
+* 拉起应用
+* @appInfo： 必填，object或者string类型，被调用的Web应用的应用信息
+* @args： 可选，any类型，传递给被拉起应用的参数
+*/
+kk.app.callApp(${1:appInfo}, ${2:args}, function (${3}) {}, function (${4}) {});
+]]></content>
+	<tabTrigger>kkappcallapp</tabTrigger>
+	<scope>source.js</scope>
+	<description>调用客户端内置的其他混合应用</description>
+</snippet>

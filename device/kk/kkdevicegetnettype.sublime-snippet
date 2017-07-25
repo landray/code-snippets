@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 获取设备当前的网络类型
+* @成功回调：回调参数是包含网络类型的对象
+*/   
+kk.device.getNetType(function (${1}) {}, function (${2}) {});
+]]></content>
+	<tabTrigger>kkdevicegetnettype</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取设备使用的网络类型</description>
+</snippet>

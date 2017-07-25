@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 扫描身份证
+* @hint：string类型 扫描界面上的提示信息，可选
+* @成功回调：回调参数是一个包含身份证信息的对象，详见文档
+*/
+this.\$kk.scaner.scanIDCard({hint: ${1}}, function (${2}) {}, function (${3}) {});
+]]></content>
+	<tabTrigger>skscanerscanidcard</tabTrigger>
+	<scope>source.js</scope>
+	<description>扫描身份证</description>
+</snippet>

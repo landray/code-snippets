@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 文件查看
+* @options：object类型或者string类型 文件地址的配置，详见文档
+*/
+this.\$kk.file.view(${1:options}, function (${2}) {}, function (${3}) {});
+]]></content>
+	<tabTrigger>skfileview</tabTrigger>
+	<scope>source.js</scope>
+	<description>查看文件</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+// 判断是否为混合应用
+var ${1:flag} = this.\$kk.app.isOfflineApp(); 
+]]></content>
+	<tabTrigger>skappisOfflineApp</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断当前应用是否为混合应用</description>
+</snippet>

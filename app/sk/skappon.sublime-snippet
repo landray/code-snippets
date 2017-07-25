@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 添加应用事件监听
+* @eventName： string类型，事件名称
+* @回调函数：因eventName不同，回调参数也不同，详见文档
+*/
+this.\$kk.app.on(${1:eventName}, function(${2}) {});
+]]></content>
+	<tabTrigger>skappon</tabTrigger>
+	<scope>source.js</scope>
+	<description>添加应用事件监听</description>
+</snippet>

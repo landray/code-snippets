@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 代理请求
+* @options：object类型 请求参数设置
+* @返回值：promise对象，你可以直接在后面使用promise写法
+*/ 
+kk.proxy.requset(${1:options}).then(${2})
+]]></content>
+	<tabTrigger>kkproxyrequset</tabTrigger>
+	<scope>source.js</scope>
+	<description>代理请求</description>
+</snippet>

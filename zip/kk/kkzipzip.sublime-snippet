@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 压缩文件
+* @options：object类型 文件压缩的配置选项，详见文档
+*/ 
+kk.zip.zip(${1:options}, function (${2}) {}, function (${3}) {});
+]]></content>
+	<tabTrigger>kkzipzip</tabTrigger>
+	<scope>source.js</scope>
+	<description>压缩文件</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+// 隐藏右上角菜单按钮
+this.\$kk.menu.hideMenuItems();
+${1}
+]]></content>
+	<tabTrigger>skmenuhidemenuitems</tabTrigger>
+	<scope>source.js</scope>
+	<description>隐藏右上角菜单按钮</description>
+</snippet>

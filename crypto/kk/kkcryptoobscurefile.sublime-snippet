@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 加密文件
+* @options：object类型 描述要加密文件的配置选项，详见文档
+* @成功回调：无回调参数
+*/ 
+kk.crypto.obscureFile(${1:options}, function () {${2}}, function (${3}) {});
+]]></content>
+	<tabTrigger>kkcryptoobscurefile</tabTrigger>
+	<scope>source.js</scope>
+	<description>加密文件</description>
+</snippet>

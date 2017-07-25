@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+this.\$kk.proxy.uploadView(options, [done], [fail])
+]]></content>
+	<tabTrigger>skproxyuploadview</tabTrigger>
+	<scope>source.js</scope>
+	<description>针对EKP的上传接口</description>
+</snippet>

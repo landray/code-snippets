@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 获取员工的头像地址 
+* @loginName：string类型 所查询人员在企业通讯录中的登录名
+*/    
+var ${2:avatarUrl} = this.\$kk.econtact.getUserAvatar(${1:loginName});
+]]></content>
+	<tabTrigger>skecontactgetuseravatar</tabTrigger>
+	<scope>source.js</scope>
+	<description>使用用户信息获取用户头像</description>
+</snippet>

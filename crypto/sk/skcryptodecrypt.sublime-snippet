@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 解密字符串
+* @text：string类型 被加密的字符串
+* @key：string类型 加密密钥
+* @成功回调：回调参数是包含解密后字符串的对象
+*/    
+this.\$kk.crypto.encrypt({text: ${1}, key: ${2}}, function (${3}) {}, function (${4}) {});
+]]></content>
+	<tabTrigger>skcryptodecrypt</tabTrigger>
+	<scope>source.js</scope>
+	<description>解密字符串</description>
+</snippet>

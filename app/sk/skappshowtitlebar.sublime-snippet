@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+// 显示应用容器(webview)的标题栏/导航栏
+this.\$kk.app.showTitleBar();
+${1}
+]]></content>
+	<tabTrigger>skappshowtitlebar</tabTrigger>
+	<scope>source.js</scope>
+	<description>显示webview标题栏/导航栏</description>
+</snippet>

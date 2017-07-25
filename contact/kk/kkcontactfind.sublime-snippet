@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 查找联系人
+* @以下参数选其一
+*  name: string类型 根据名字查找
+*  phone: string类型 根据电话号码查找
+*/
+kk.contact.find({name: ${1}}, function (${2}) {}, function (${3}) {});
+]]></content>
+	<tabTrigger>kkcontactfind</tabTrigger>
+	<scope>source.js</scope>
+	<description>查找联系人</description>
+</snippet>
