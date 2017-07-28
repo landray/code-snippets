@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+// vue-resource post 请求
+// 更详细的配置参考 vue-resource 的官方文档：https://github.com/pagekit/vue-resource/blob/develop/docs/http.md
+this.\$http.post('${1:/api/get-user-data}', { // post 请求的请求路径，必选，值类型为 String
+  body: ${2:{userID: 20\}} // post 请求需要传输的 data，可选，按实际需求配置，值类型为 String, Object, FormData
+}).then((res) => res.json().then((resBody) => {
+  // 请求成功回调，服务器返回数据 resBody
+  ${3:// 输出请求成功后返回的数据
+  console.log(resBody)}
+}), (res) => {
+  // 请求失败回调
+  ${4:// 输出请求失败文本信息
+  console.log(res.statusText)}
+})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>shttppost</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+  <description>vue-resource post请求</description>
+</snippet>

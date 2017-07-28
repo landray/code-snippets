@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+// vue-resource get 请求
+// 更详细的配置参考 vue-resource 的官方文档：https://github.com/pagekit/vue-resource/blob/develop/docs/http.md
+this.\$http.get('${1:/api/get-user-data}', { // get 请求的请求路径，必选，值类型为 String
+  params: ${2:{userID: 20\}} // get 请求的 query 参数，可选，值类型为 Object
+}).then((res) => res.json().then((resBody) => {
+  // 请求成功回调
+  ${3:// 输出请求成功返回的数据 resBoby
+  console.log(resBody)}
+}), (res) => {
+  // 请求失败回调
+  ${4:// 输出请求失败文本信息
+  console.log(res.statusText)}
+})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>shttpget</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+  <description>vue-resource get请求</description>
+</snippet>
