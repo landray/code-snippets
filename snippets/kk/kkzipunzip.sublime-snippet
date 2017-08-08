@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+// 解压文件
+// 填写文件路径请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+kk.zip.unzip({
+  zipFilePath: '${1:sdcard://test/zipFolder.zip}', //需要解压文件(夹)的路径
+  outPath: '${2:sdcard://test/zipFolder}' //解压后的输出目录
+}, function (res) {
+  /* res 示例
+    {
+      zipFilePath: 'sdcard://test/zipFolder.zip', //源压缩文件的路径，Android无此属性
+      outPath: 'sdcard://test/zipFolder' //解压后的输出目录
+    }
+  */
+  ${3}
+}, function (code, msg) {
+  console.log('解压文件失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkzipunzip</tabTrigger>
+	<scope>source.js</scope>
+	<description>解压文件</description>
+</snippet>

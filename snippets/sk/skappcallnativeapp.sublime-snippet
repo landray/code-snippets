@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+// 拉起原生发短信应用
+this.\$kk.app.callNativeApp({
+  //以下参数均由被拉起的 iOS/Android 客户端开发商提供
+  url: '${1:smsto:13823794432}', // Native应用注册处理的url IOS只需要提供此url
+  action: '${2:android.intent.action.SENDTO}', // Intent Action
+  category: '${3:android.intent.category.DEFAULT}', // Intent category，暂不支持多个 
+  otherParam: {
+    ${4:sms_body: '短信内容'} // 拉起应用的额外参数，作为extra放到启动Intent中。 
+  },
+  type: '${5}', // Intent MimeType
+  package: '${6}', // Intent package
+  class: '${7}' // Intent class
+}, function () {
+  // 无回调参数
+  ${8}
+}, function (code, msg) {
+  console.log('callNativeApp出错，错误代码：' + code + '，错误信息:' + msg);
+});
+]]></content>
+	<tabTrigger>skappcallnativeapp</tabTrigger>
+	<scope>source.js</scope>
+	<description>启动第三方native应用</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+// 删除文件
+// 填写文件路径请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+kk.file.remove('${1:sdcard://easymi/1.png}', function () {
+  // 无回调参数
+  ${2}
+}, function (code, msg) {
+  console.log('删除文件失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkfileremove</tabTrigger>
+	<scope>source.js</scope>
+	<description>删除文件</description>
+</snippet>

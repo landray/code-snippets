@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[
+// 扫描车辆行驶证，KK客户端需要集成第三方合合OCR提供的授权码
+this.\$kk.scaner.scanVLCard({
+  hint: '${1:请扫描车辆行驶证}' //扫描界面上的提示信息
+}, function (res) {
+  /* res示例
+    {
+      plateNo: "京BU89ED", //车辆号牌号码
+      type: "小型轿车", //车辆类型
+      owner: "焦西杰", //车辆所有人
+      address: "河南省腾山市丰风区右家坞镇石嘉窝村塘五区11籍41号", // 住址
+      useCharacter: "非营运", // 车辆使用性质
+      model: "大众牌PV7126VOMUQQ", //车辆品牌型号
+      vin: "PV2B1107F87369479", // 车辆识别代号
+      engineNo: "Y26549", //车辆发动机号码
+      registerDate: "2016-01-08", //行驶证注册日期
+      issueDate: "2016-01-08"  //行驶证发证日期
+    }
+  */
+  ${2}
+}, function (code, msg) {
+  // -1 能力未获得授权
+  // -9 OCR程序出错
+  console.log('扫描车辆行驶证失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skscanerscanvlcard</tabTrigger>
+	<scope>source.js</scope>
+	<description>扫描车辆行驶证</description>
+</snippet>

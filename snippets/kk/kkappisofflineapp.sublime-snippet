@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+kk.app.isOfflineApp(); // 判断是否为混合应用 是则返回true，否则返回false
+]]></content>
+	<tabTrigger>kkappisofflineapp</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断当前应用是否为混合应用
+根据location的协议判断</description>
+</snippet>

@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+// 扫描身份证，KK客户端需要集成第三方合合OCR提供的授权码
+kk.scaner.scanIDCard({
+  hint: '${1:请扫描身份证}' //扫描界面上的提示信息
+}, function (res) {
+  /* res示例
+    {
+      "isFront": true, // 正面
+      "name":"庞玲", // 姓名
+      "sex":"女", //性别
+      "national":"汉", //民族
+      "birthday":"1989年9月20日", //生日
+      "address":"安徽省蒙城县乐生镇杨桥村武庄62号", // 住址
+      "idcard":"341234198909204160", //身份证号码
+      "issue":"",  //签发机构
+      "validity":"" //身份证有效期
+    }
+  */
+  ${2}
+}, function (code, msg) {
+  // -1 能力未获得授权
+  // -9 OCR程序出错
+  console.log('扫描身份证失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkscanerscanidcard</tabTrigger>
+	<scope>source.js</scope>
+	<description>扫描身份证</description>
+</snippet>

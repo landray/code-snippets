@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+// 音频播放
+this.\$kk.media.playAudio({
+  filePath: '${1:/data/data/com.landray.kkplus/files/ekp_1488261335494.amr}' // 音频文件全路径
+}, function (code, msg) {
+  // -3  播放被取消
+  console.log('音频播放失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skmediaplayaudio</tabTrigger>
+	<scope>source.js</scope>
+	<description>音频播放</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+// 判断当前页面是否有上一页
+this.\$kk.history.hasPrev(function (res) {
+  /* res示例
+    {
+      hasPrev: false, // 是否有上一页，false表示没有上一页
+    }
+  */
+  ${1}
+});
+]]></content>
+	<tabTrigger>skhistoryhasprev</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断当前页面是否有上一页</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+/* 
+* 获取用户信息
+* {
+*   userId: '435', 用户id
+*   loginName: 'CP3', 用户登录名
+*   userName: 'guo123' 用户显示名称
+* }
+*/
+this.\$kk.app.getUserInfo();
+]]></content>
+	<tabTrigger>skappgetuserinfo</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取用户信息</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+// 设置设备屏幕旋转方向
+// 可选值有portrait(默认值，竖屏)，landscape(横屏)，auto(自动旋转)
+this.\$kk.device.setOrientation('${1:portrait}');
+]]></content>
+	<tabTrigger>skdevicesetorientation</tabTrigger>
+	<scope>source.js</scope>
+	<description>设置设备屏幕旋转方向</description>
+</snippet>

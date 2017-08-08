@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+// 获取设备使用的网络类型
+kk.device.getNetType(function (res) {
+  //res: 可能值2G/3G/4G/WIFI，空字符串代表无网络，iOS下2G/3G均返回3G
+  ${1}
+}, function (code, msg) {
+  console.log('获取设备网络类型失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkdevicegetnettype</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取设备使用的网络类型</description>
+</snippet>

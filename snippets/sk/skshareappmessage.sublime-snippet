@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+// 发送卡片消息至KK
+this.\$kk.share.appMessage({
+  data: {${1}}, // 选填，附带参数。通过分享的应用消息进入应用后，可在 this.\$kk.ready 的参数中获取data的内容
+  title: '${2:卡片式消息的标题}',  // 必填，消息标题
+  content: '${3:卡片式消息的摘要}', // 必填，消息摘要
+  targetPlatform: '${4:mobile}', //选填，可打开该应用的目标平台，可选值有 ios (iOS系统), android (安卓系统), mobile (移动端), desktop (PC端), universal (所有平台)，默认值为 mobile
+  targetType: '${5:universal}', //选填，目标平台类型，可选值有 pad (平板类), phone (手机类), universal (通用类)，默认值为 universal
+  recieverList: [${6:123}], //选填，接收方列表，列表内容为接收方的userID
+  recieverType:'${7:user}', //当recieverList有值时必填，指定接收方类型，可选值有 user (同事), group (群组)
+  showChooseView: ${8:true} //选填，是否手动选择接收者若该值为 true，则会拉起选人界面; 若该值为 false，且在recieverList指定了接收者，则会直接发送消息。默认为 true
+}, function () {
+  // 无回调参数
+  ${9}
+}, function (code, msg) {
+  // 1  页面不能分享
+  // -6 参数错误
+  // -1 用户取消
+  console.log('分发送卡片消息至KK失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skshareappmessage</tabTrigger>
+	<scope>source.js</scope>
+	<description>发送卡片消息至KK</description>
+</snippet>

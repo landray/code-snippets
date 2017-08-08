@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+// 扫描条形码，注意要开启拍照的权限
+kk.scaner.scanBarCode(function (res) {
+  /* res示例
+    {  
+      retCode: 0,
+      code:'http://baike.baidu.com'  //条形码内容
+    }
+  */
+  ${1}
+}, function (code, msg) {
+  console.log('扫描条形码失败，错误代码是' + code + '，错误信息是' + msg);
+})
+]]></content>
+	<tabTrigger>kkscanerscanbarcode</tabTrigger>
+	<scope>source.js</scope>
+	<description>扫描条形码</description>
+</snippet>

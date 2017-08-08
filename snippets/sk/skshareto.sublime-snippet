@@ -1,0 +1,44 @@
+<snippet>
+	<content><![CDATA[
+// 分享至客户端(分享到微信，KK客户端需要添加微信开发者ID)
+
+// 分享到微信
+this.\$kk.share.to('weixin', {
+  url: '${1:http://kk5.landray.com.cn:6789/}', //指定要分享的链接
+  title: '${2:卡片式消息的标题}',  // 卡片式消息的标题，选填
+  content: '${3:卡片式消息的摘要}', // 卡片式消息的摘要，选填
+  imageUri: '${4:http://kk5.landray.com.cn:8000/serverj/getAppIcon?appCode=123}' // 分享缩略图。选填，支持http(s)协议，以及KK协议路径
+}, function () {
+  // 无回调参数
+  ${5}
+}, function (code, msg) {
+  // 1  页面不能分享
+  // -6 参数错误
+  // -1 用户取消
+  console.log('分享至微信失败，错误代码是' + code + '，错误信息是' + msg);
+});
+
+// 分享到kk
+this.\$kk.share.to('kk', {
+  type: 'card', // 指定消息类型，可选值有 text (文本消息), card (卡片消息)，默认值为 card
+  url: 'http://kk5.landray.com.cn:6789/', //指定要分享的链接，type为 card 时必填
+  title: '卡片式消息的标题',  // 卡片式消息的标题，type为 card 时必填
+  content: '卡片式消息的摘要', // type为 card 时必填，type为 text 时表示文本消息正文，type为 card 时表示卡片消息的摘要
+  imageUri: 'http://kk5.landray.com.cn:8000/serverj/getAppIcon?appCode=123', // 分享缩略图。选填，支持http(s)协议，以及KK协议路径
+  recieverList: [123], //选填，接收方列表，列表内容为接收方的userID
+  recieverType:'user', //当recieverList有值时必填，指定接收方类型，可选值有 user (同事), group (群组)
+  showChooseView: true //选填，是否手动选择接收者若该值为 true，则会拉起选人界面; 若该值为 false，且在recieverList指定了接收者，则会直接发送消息。默认为 true
+}, function () {
+  // 无回调参数
+  
+}, function (code, msg) {
+  // 1  页面不能分享
+  // -6 参数错误
+  // -1 用户取消
+  console.log('分享至kk客户端失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skshareto</tabTrigger>
+	<scope>source.js</scope>
+	<description>分享至客户端</description>
+</snippet>

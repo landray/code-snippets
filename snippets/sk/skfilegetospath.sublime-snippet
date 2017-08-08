@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+// 获取文件在操作系统上的路径
+// 填写文件路径请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+this.\$kk.file.getOSPath('${1:sdcard://kktest/fileTest.txt}', function (res) {
+  /* res值示例
+    {
+      OSPath：'kkapp://fil.o-1091-o.kk/storage/sdcard1/kktest/fileTest.txt'
+    }
+  */
+  ${2}
+}, function (code, msg) {
+  console.log('获取文件全路径失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skfilegetospath</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取文件在操作系统上的路径</description>
+</snippet>

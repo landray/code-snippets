@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+// 拷贝文件
+// 填写文件路径请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+kk.file.copy({
+  source: '${1:sdcard://easymi/test.txt}', //源文件路径
+  target: '${2:sdcard://easymi/copy/test.txt}' //目标的路径
+}, function () {
+  // 没有回调参数
+  ${3}
+}, function (code, msg) {
+  // 1 文件不存在
+  console.log('拷贝文件失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkfilecopy</tabTrigger>
+	<scope>source.js</scope>
+	<description>拷贝文件</description>
+</snippet>

@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 获取用户的用户信息
+* 参数可选，不传参则返回自己的信息
+*/      
+kk.econtact.getUserInfo(['${1:useID1}', '${2:useID2}'], function (res) {
+  /*res：返回联系人信息对象的数组
+    [{
+      userID:'139',//用户ID
+      name:'Johnson Wu',//用户姓名
+      depart:'研发组',//用户直属部门名称
+      mobile:'13800138000',//用户电话
+      loginName:'wugh'//用户登录名
+      email:'wugh@landray.com.cn',//用户邮箱
+      deptPath:['深圳蓝凌','KK事业部','研发组'],//用户所有部门名称
+      jobTitle: '前端工程师', // 职位
+      signature: '123456'  // 个性签名
+    }]
+  */
+  ${3}
+}, function (code, msg) {
+  console.log('获取用户信息失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkecontactgetuserinfo</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取用户信息</description>
+</snippet>

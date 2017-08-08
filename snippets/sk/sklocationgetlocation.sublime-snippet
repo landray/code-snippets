@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+// 获取当前位置，需要在设置-权限中开启定位服务
+this.\$kk.location.getLocation(function (res) {
+  /* res示例
+  {
+    longitude: '113.946651', // 经度
+    latitude: '22.546562', // 纬度
+    altitude: '4.9E-324' // 海拔高度
+  }
+  */
+  ${1}
+}, function (code, msg) {
+  // 9 没有开启定位功能
+  console.log('获取当前位置失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>sklocationgetlocation</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取当前位置</description>
+</snippet>

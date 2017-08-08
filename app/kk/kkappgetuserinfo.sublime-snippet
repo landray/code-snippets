@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-// 获取用户信息，返回 userInfo 对象
-var ${1:userInfo} = kk.app.getUserInfo();
-]]></content>
-	<tabTrigger>kkappgetuserinfo</tabTrigger>
-	<scope>source.js</scope>
-	<description>获取用户信息</description>
-</snippet>

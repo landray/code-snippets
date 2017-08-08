@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+// 读取文本文件内容
+// 填写文件路径请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+this.\$kk.file.readAsText({
+  encoding: '${1:utf-8}', //编码方式
+  filepath: '${2:sdcard://easymi/test.txt}', // 文件路径
+}, function (res) {
+  /* res示例
+    {
+      content: '我是测试'
+    }
+  */
+  ${5}
+}, function (code, msg) {
+  // 1 文件不存在
+  console.log('读取文本文件内容失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skfilereadastext</tabTrigger>
+	<scope>source.js</scope>
+	<description>读取文本文件内容</description>
+</snippet>

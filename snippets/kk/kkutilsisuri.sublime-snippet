@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+//判断字符串是否为合法的URI
+kk.utils.isURI('${2:tel:+1-816-555-1212}'); // true
+kk.utils.isURI('${3:call-weixin}'); // false
+]]></content>
+	<tabTrigger>kkutilsisuri</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断字符串是否为合法的URI</description>
+</snippet>

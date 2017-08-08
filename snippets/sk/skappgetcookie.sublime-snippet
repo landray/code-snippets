@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+// 获取某个网址中的cookie
+this.\$kk.app.getCookie({
+  url: '${1:http://www.baidu.com/}' // 要获取cookie的url
+}, function (res) {
+  // res.cookie 获取到的cookie字符串
+  ${2}
+}, function (code, msg) {
+  console.log('获取cookie失败, 错误码: ' + code + '，错误信息: ' + msg);
+});
+]]></content>
+	<tabTrigger>skappgetcookie</tabTrigger>
+	<scope>source.js</scope>
+	<description>从webview中获取cookie</description>
+</snippet>

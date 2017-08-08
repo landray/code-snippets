@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+//拉起微信支付
+// 以下参数必填
+this.\$kk.pay.weixin({
+  appid: '${1:wx0aee55eb7d35b42b}', // 你的appid,需要自己申请
+  partnerid: '${2:1229457302}', // 商户号id
+  prepayid: '${3:12294573232}', // 交易会话id
+  package: '${4:Sign=WXPay}', //固定值Sign=WXPay
+  noncestr: '${5:Wm3WZYTPz0wzccnW}', //随机字符串，不长于32位。必填。
+  timestamp: '${6:1477460765018}', // 时间戳，标准北京时间
+  sign: '${7:0f9de62fce790f9a083d5c99e95740ceb90c27ed}' //签名，详见微信支付官网上的签名算法
+}, function () {
+  // 无回调参数
+  ${8}
+}, function (code, msg) {
+  //-1 微信拒绝发起支付(一般是由于接入信息不正确、签名不正确等）
+  // -3 设备上未安装微信
+  console.log('拉起微信支付失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skpayweixin</tabTrigger>
+	<scope>source.js</scope>
+	<description>拉起微信支付</description>
+</snippet>

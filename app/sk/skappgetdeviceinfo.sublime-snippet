@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-// 获取设备信息
-var ${1:deviceInfo} = this.\$kk.app.getDeviceInfo();
-]]></content>
-	<tabTrigger>skappgetdeviceinfo</tabTrigger>
-	<scope>source.js</scope>
-	<description>获取设备信息</description>
-</snippet>

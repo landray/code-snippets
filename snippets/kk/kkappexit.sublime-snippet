@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+// 退出应用
+kk.app.exit();
+]]></content>
+	<tabTrigger>kkappexit</tabTrigger>
+	<scope>source.js</scope>
+	<description>退出应用, 即关闭webview</description>
+</snippet>

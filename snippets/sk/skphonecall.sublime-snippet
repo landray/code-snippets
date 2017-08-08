@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+// 拨打电话    
+this.\$kk.phone.call({
+  number: ${1:10086}, // 电话号码
+  needCallSessionInfo: ${2:false} // 是否需要通话信息，默认是false
+}, function (res) {
+  // needCallSessionInfo设置为true才会返回回调参数
+  ${3}
+}, function (code, msg) {
+  console.log('拨打电话失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skphonecall</tabTrigger>
+	<scope>source.js</scope>
+	<description>拨打电话</description>
+</snippet>

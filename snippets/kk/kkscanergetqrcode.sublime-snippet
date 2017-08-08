@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+// 生成二维码，注意要开启拍照的权限
+kk.scaner.getQRCode({
+  content: '${1:蓝凌软件股份有限公司}', // 二维码内容
+  targetSize: ${2:100}, //输出的正方形图片的边长
+  destinationType: '${3:file}', //文件输出形式，可选值有file/data
+  savePath: '${4:sdcard://easymi/1.png}' //destinationType为file时有效，不指定则随机文件名保存至 sdcard://easymi/ 目录下，路径填写请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+}, function (res) {
+  /* res示例
+    {
+      imageURI: 'sdcard://easymi/1.png', //处理后的文件保存路径(当destinationType为file时，返回此属性)
+      imageFileOSPath:'kkapp://fil.o-1091-o.kk/storage/sdcard1/easymi/1.png', //处理后的文件的操作系统路径(当destinationType为file时，返回此属性)
+      imageData: //图片内容的base编码(当destinationType为data时，返回此属性)
+    }
+  */
+  ${5}
+}, function (code, msg) {
+  console.log('生成二维码失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkscanergetqrcode</tabTrigger>
+	<scope>source.js</scope>
+	<description>生成二维码</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+//判断参数是否为空(null, undefined, '', 空数组均返回true)
+kk.utils.isEmpty(${1:null});  //=> true
+]]></content>
+	<tabTrigger>kkutilsisempty</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断参数是否为空</description>
+</snippet>

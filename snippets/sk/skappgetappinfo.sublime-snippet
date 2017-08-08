@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+/* 
+* 获取应用信息
+* {
+*   appID: '1213', 应用ID
+*   name: '混合应用能力测试', 应用名称
+*   code: 'ID440ll' 应用代码
+* }
+*/
+this.\$kk.app.getAppInfo();
+]]></content>
+	<tabTrigger>skappgetappinfo</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取应用信息</description>
+</snippet>

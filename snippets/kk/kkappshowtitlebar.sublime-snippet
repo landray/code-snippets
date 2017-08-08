@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+// 显示应用容器(webview)的标题栏，同kk.app.setScreenMode('normal');
+kk.app.showTitleBar();
+]]></content>
+	<tabTrigger>kkappshowtitlebar</tabTrigger>
+	<scope>source.js</scope>
+	<description>显示webview标题栏/导航栏</description>
+</snippet>

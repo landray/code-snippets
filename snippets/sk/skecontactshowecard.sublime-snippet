@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+// 显示联系人资料页面    
+// uesrID和loginName选其一传值，如果都传则优先使用userID 
+this.\$kk.econtact.showECard({
+  uesrID: '${1:123}', // 用户userID
+  loginName: '${2:zhangsan}' // 登录名loginName
+  }, function () {
+  // 无回调参数
+  ${4}
+}, function (code, msg) {
+  // 991 参数不可用
+  // -2  找不到对应的员工
+  console.log('显示联系人资料页面失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skecontactshowecard</tabTrigger>
+	<scope>source.js</scope>
+	<description>显示联系人资料页面</description>
+</snippet>

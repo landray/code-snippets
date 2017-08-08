@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+// 判断参数类型，返回类型名称
+// 如('abc'返回'String'，[]返回'Array'等)
+// 支持传第二个参数，判断是不是该类型，返回Boolean值
+this.\$kk.utils.type('${1:abc}'); // 'String'
+this.\$kk.utils.type('${2:abc}', 'string'); // true
+]]></content>
+	<tabTrigger>skutilstype</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断参数obj类型</description>
+</snippet>

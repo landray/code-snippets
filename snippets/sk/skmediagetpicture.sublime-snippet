@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[
+// 获取照片(相册或拍照)
+this.\$kk.media.getPicture({
+  // 以下参数均可选
+  count: ${1:1}, // 获取的图片张数，默认为1张
+  sourceType: '${2:camera}', // 数据来源 camera(相机)/album(相册)，默认是camera
+  destinationType: '${3:file}', // 图片的数据存储类型 file(文件)/data(base64)，默认是file， 设置为data时仅支持单张图片
+  targetWidth: ${4:window.screen.width}, // 输出图片宽 单位px，默认100
+  targetHeight: ${5:window.screen.height}, // 输出图片高 单位px，默认100
+  encodingType: '${6:png}', // 输出格式,可选值:jpeg/png 默认是png 
+  quality: ${7:50}, // 输出图片质量，范围:0-100，默认是50，encodingType 为png时，该参数无效
+  savePath: '${8:sdcard://media/photo/single.png}', // 文件的保存至手机的路径，destinationType=file时有效，获取单张时可以是string类型，多张时则必须是 array类型，填写请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+  exifFlag: ${9:false} // 是否在照片信息中保存GPS位置信息 在 sourceType为camera，destinationType为file，encodingType为jpeg才有效
+},function (res) {
+  // res:未设置 options.count时 res是图片对象，设置了该值，则res是图片对象数组
+  /*
+    {
+      imageData: 'data:image/png;base64,/9j...', // 图片的base64编码，可作图片src ，destinationType = data时返回
+      //以下值是options.destinationType = file 时才返回
+      imageFileOSPath:'kkapp://fi.o-1091-o.kk/storage/sdcard1/media/photo/single.png', //图片在操作系统上的实际路径，可作图片src 
+      imageURI: 'sdcard://media/photo/single.png', //保存文件的协议路径(sdcard协议)
+      imageTime: '2017-02-28T05:28:08.000Z', //图片创建时间对象
+      imageTimeString: '20170228132808' // 图片创建时间字符串
+    }
+  */
+  ${10}
+}, function (code, msg) {
+  // -90 参数错误
+  console.log('获取照片失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skmediagetpicture</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取照片(相册或拍照)</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+// 判断文件是否存在
+// 填写文件路径请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+kk.file.exists('${1:sdcard://easymi/1.png}', function (res) {
+  /* res示例
+    {
+      exists: true // true 表示文件存在，false 表示文件不存在
+    }
+  */
+  ${2}
+}, function (code, msg) {
+  console.log('判断文件是否存在失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkfileexists</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断文件是否存在</description>
+</snippet>

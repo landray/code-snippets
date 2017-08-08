@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+// 代理请求,支持promise写法
+this.\$kk.proxy.request({
+  url: '${1:http://www.atool.org/httptest.php}',//请求的URL
+  // 请求的参数，以JSON形式的Object或者字符串
+  data: {${2:
+    "username": "landray",
+    "password": "connect"
+  }},
+  contentType: '${3:form}', // 发送参数时的编码格式，可选值有form/json
+  dataType: '${4:json}', //返回数据格式 可选值有text/json
+  // 额外的请求头
+  headers: {${5:
+    'Accept-Language': 'zh',
+    'Date': 'HTTP-date'
+  }},
+  // 在发送请求前执行该函数，可选
+  beforeSend: function () {
+    ${6}
+  },
+  //成功回调
+  success: function (res) {
+    ${7}
+  },
+  //失败回调
+  error: function (code, msg) {
+    console.log('代理请求失败,错误代码：' + code + ' ,错误信息: ' + msg );
+  }
+});
+]]></content>
+	<tabTrigger>skproxyrequest</tabTrigger>
+	<scope>source.js</scope>
+	<description>代理请求</description>
+</snippet>

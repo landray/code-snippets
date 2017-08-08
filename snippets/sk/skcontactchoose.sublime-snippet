@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+// 选择联系人 
+this.\$kk.contact.choose({
+  mode: ${1:1} // 选择类型模式 默认值是1(人), 可选值还有2(电话号码),3(邮件)
+}, function (res) {
+  // res 联系人信息数组，可查看
+  // http://kk5.landray.com.cn:6789/jssdk/index.html#contact
+  ${2}
+}, function (code, msg) {
+  console.log('选择联系人失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skcontactchoose</tabTrigger>
+	<scope>source.js</scope>
+	<description>从手机通讯录选人</description>
+</snippet>

@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+// 压缩文件
+// 填写文件路径请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+this.\$kk.zip.zip({
+  folderPath: '${1:sdcard://test/zipFolder}', //要压缩的文件(夹)路径
+  zipFilePath: '${2:sdcard://test/zipFolder.zip}' //压缩生成的zip文件路径
+}, function (res) {
+  /* res 示例
+    {
+      zipFilePath: 'sdcard://test/zipFolder.zip', //压缩后的zip文件路径
+      FolderPath: 'sdcard://test/zipFolder' // 源文件(夹)的路径，Android无此属性
+    }
+  */
+  ${3}
+}, function (code, msg) {
+  console.log('压缩文件失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skzipzip</tabTrigger>
+	<scope>source.js</scope>
+	<description>压缩文件</description>
+</snippet>

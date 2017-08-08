@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+// 删除联系人，需要开启KK读写通讯录的权限
+//先找到联系人id ，再进行删除联系人
+this.\$kk.contact.find({
+  name:'${1:xxx}' // 查找的名字
+}, function (res) {
+  // 删除联系人
+  this.\$kk.contact.remove(res[0].id, function () {
+    // 无回调参数
+    ${3}
+  }, function (code, msg) {
+    console.log('删除联系人失败，错误代码是' + code + '，失败信息' + msg);
+  });
+}, function (code, msg) {
+  console.log('查找联系人失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skcontactremove</tabTrigger>
+	<scope>source.js</scope>
+	<description>删除联系人，需要开启KK读写通讯录的权限</description>
+</snippet>

@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+// 查看文件
+// 填写文件路径请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+kk.file.view({
+  filepath: '${1:sdcard://easymi/1.png}', //文件路径
+  via: '${2:auto}', //使用什么方式查看，可选值有auto，wps，webview
+  mode: '${3:readonly}', // 文件打开的方式，可选值有readonly，edit，默认是readonly，仅在 `via:wps`时有效
+  title: '${4:我是webview标题}' //页面上的标题，此参数仅在使用webview(KK客户端)打开时有效
+}, function (res) {
+  /* res示例
+    {
+      filepath: 'sdcard://easymi/1.png', //文件的相对路径
+      operation: 'open', //对文档的操作类型，可能值有open，save，close，仅在 `via:wps`时才会返回该值
+      mimeType: 'text/html' //文件的类型（仅在调用能力时参数filepath是链接（url）或者配置形式传递了mimeType参数，才会返回该值）
+    }
+  */
+  ${5}
+}, function (code, msg) {
+  // -1 文件不存在
+  console.log('查看文件失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkfileview</tabTrigger>
+	<scope>source.js</scope>
+	<description>查看文件</description>
+</snippet>

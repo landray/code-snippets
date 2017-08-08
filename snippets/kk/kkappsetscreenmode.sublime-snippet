@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+/* 
+* 设置屏幕显示模式, 可选值有:
+*   normal: 默认值，有原生导航栏，有系统状态栏。
+*   enhanced: 增强模式，隐藏原生导航栏，系统状态栏正常显示。
+*   fullscreen: 系统状态栏背景透明，不占用页面高度，制作页面时应注意顶部留出20px高度
+*/
+kk.app.setScreenMode('${1:normal}');
+]]></content>
+	<tabTrigger>kkappsetscreenmode</tabTrigger>
+	<scope>source.js</scope>
+	<description>设置屏幕显示模式</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+// 配置函数
+// 设置成功后每次调用能力则可以打印出成功回调接收的所有参数
+kk.config('${1:detailLog}', ${2:true});
+]]></content>
+	<tabTrigger>kkconfig</tabTrigger>
+	<scope>source.js</scope>
+	<description>配置函数</description>
+</snippet>

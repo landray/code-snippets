@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+// 解密字符串
+kk.crypto.decrypt({
+  text: '${1:7kxl8E55rJFm642Oelilew==}', // 需要解密的字符串
+  key: '${2:mykey}' //密钥
+}, function (res) {
+  /* res 示例
+    {
+      retCode:'0',
+      text:'需求加密的字符串' // 解密后的字符串
+    }
+  */
+  ${3}
+}, function (code, msg) {
+  console.log('解密字符串失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkcryptodecrypt</tabTrigger>
+	<scope>source.js</scope>
+	<description>解密字符串</description>
+</snippet>

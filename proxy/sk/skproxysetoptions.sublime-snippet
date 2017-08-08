@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-this.\$kk.proxy.setOptions(args)
-]]></content>
-	<tabTrigger>skproxysetoptions</tabTrigger>
-	<scope>source.js</scope>
-	<description>发送请求前, 预处理请求参数</description>
-</snippet>

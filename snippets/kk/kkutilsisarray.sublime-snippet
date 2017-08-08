@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+// 判断变量是否为数组
+kk.utils.isArray(${1:[1,3,4]}); // true
+]]></content>
+	<tabTrigger>kkutilsisarray</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断变量是否为数组</description>
+</snippet>

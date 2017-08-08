@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+// 保存图片到相册
+kk.media.save2album({
+  filepath: '${1:sdcard://media/photo/multi/101.jpeg}' // 要保存的照片路径，可以是在线图片，填写本地图片路径请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+}, function () {
+  // 无回调参数
+  ${2}
+}, function (code, msg) {
+  // 1 文件不存在
+  console.log('保存图片到相册失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkmediasave2album</tabTrigger>
+	<scope>source.js</scope>
+	<description>保存图片到相册</description>
+</snippet>

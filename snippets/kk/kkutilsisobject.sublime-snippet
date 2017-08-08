@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+// 判断参数是否为对象
+kk.utils.isObject(${1:{\}}); // true
+]]></content>
+	<tabTrigger>kkutilsisobject</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断参数是否为对象</description>
+</snippet>

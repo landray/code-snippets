@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 获取客户端配置
+* @configName：string类型 具体内容详见《配置项定义_客户端.xlsx》
+*/
+// 此处configName为kk_config_webserver_http_url，获取kk服务器的地址
+this.\$kk.app.getClientConfig('${1:kk_config_webserver_http_url}', function (res) {
+  // res:结果直接返回在回调参数
+  ${2}
+}, function (code, msg) {
+   console.log('获取客户端配置失败, 错误码: ' + code + '，错误信息: ' + msg);
+});
+]]></content>
+	<tabTrigger>skappgetclientconfig</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取客户端配置信息</description>
+</snippet>

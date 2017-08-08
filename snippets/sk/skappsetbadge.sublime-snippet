@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+// 设置应用数字图标
+this.\$kk.app.setBadge({
+  num: ${1:1} // 要设置的数字图标
+});
+]]></content>
+	<tabTrigger>skappsetbadge</tabTrigger>
+	<scope>source.js</scope>
+	<description>设置应用的数字标记</description>
+</snippet>

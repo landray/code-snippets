@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+// 监听ready事件
+kk.ready(function (res) {
+  /* res示例
+    {
+      startType:'1', //应用的启动类型，1为用户请求使用应用，2为被推送消息拉起，3为其他应用拉起
+      netState:'0', //网络状态：0：离线，1：在线
+      callArgs:{} //调用参数，startType 等于2时，为推送消息的数据，等于 3 时，为调用参数(第三方应用传入的参数)
+    }
+  */
+  ${1}
+})
+]]></content>
+	<tabTrigger>kkready</tabTrigger>
+	<scope>source.js</scope>
+	<description>监听ready事件</description>
+</snippet>

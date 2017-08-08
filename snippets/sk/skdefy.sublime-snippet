@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+// 将kk的回调函数 promise 化 
+// 获取照片，第一个参数可传KK能力函数(如this.\$kk.media.getPicture)或能力名称("media.getPicture")
+this.\$kk.defy(${1:this.\$kk.media.getPicture}, ${2:{
+  sourceType: 'album' // 传参，参数因能力不同而异
+\}}).then(function(res) {
+  /* res示例
+    {
+      imageURI: "sdcard://easymi/1496399648439.png", 
+      imageTime: Fri Jun 02 2017 18:34:07 GMT+0800 (CST)
+      ...
+    }
+  */
+  ${3}
+}).catch(function (code, msg) {
+  console.log('拍照失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skdefy</tabTrigger>
+	<scope>source.js</scope>
+	<description>将kk的回调函数 promise 化</description>
+</snippet>

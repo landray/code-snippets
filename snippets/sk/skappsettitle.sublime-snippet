@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+// 设置应用容器(webview)标题栏的标题
+this.\$kk.app.setTitle('${1:我是标题}');
+]]></content>
+	<tabTrigger>skappsettitle</tabTrigger>
+	<scope>source.js</scope>
+	<description>设置native导航栏标题</description>
+</snippet>

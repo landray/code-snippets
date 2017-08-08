@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+// 查找联系人
+kk.contact.find({
+  // name和 phone选其一传即可，也可都传，都传需要保持二者相对应
+  name:'${1:xxx}' // 查找的名字
+  phone:'${2:xxx}' // 查找的电话号码
+}, function (res) {
+  // res: 联系人信息对象，可查看
+  // http://kk5.landray.com.cn:6789/jssdk/index.html#contact
+  ${3}
+}, function (code, msg) {
+  console.log('查找联系人失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkcontactfind</tabTrigger>
+	<scope>source.js</scope>
+	<description>查找联系人</description>
+</snippet>

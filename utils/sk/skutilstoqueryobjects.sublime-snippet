@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-this.\$kk.utils.toQueryObjects(name, val, deep)
-]]></content>
-	<tabTrigger>skutilstoqueryobjects</tabTrigger>
-	<scope>source.js</scope>
-	<description>将一个键值(可以是任意类型)对(pair)扁平化, 方便将其转换为query string</description>
-</snippet>

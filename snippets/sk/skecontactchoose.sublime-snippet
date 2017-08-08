@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[
+// 企业通讯录里面选择联系人
+this.\$kk.econtact.choose({
+  initList: [${1}], // 初始选中的useID集合，格式如['332','178','useID...']
+  isSticky: ${2:false}, // 被选中的联系人是否可以取消选中，true为不可取消，默认是false
+  maxCount: ${3:0}, // 最多可选择的人数 默认是0，不限制
+}, function (res) { 
+  /* res：返回包含被选择的联系人信息对象的数组
+     [{
+       userID:'359',//联系人ID
+       name:'隔壁老王',//联系人姓名
+       depart:'应用组',//联系人直属部门名称
+       mobile:'13800138000',//联系人电话
+       loginName:'laowang',//联系人登录名称
+       email:'wyg@landray.com.cn',//联系人邮箱
+       deptPath:['深圳蓝凌-47','KK产品中心-47','应用组'],//联系人所有部门名称
+       jobTitle: '前端工程师', // 职位
+       signature: '123456'  // 个性签名
+     }]
+  */
+  ${4}
+}, function (code, msg) {
+  // -1  用户取消了选择
+  console.log('企业通讯录选人失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skecontactchoose</tabTrigger>
+	<scope>source.js</scope>
+	<description>企业通讯录里面选择联系人</description>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+// 获取签名的图片
+this.\$kk.media.getSignImage({
+  width: ${1:window.screen.width}, // 输出的图片宽度，必填
+  height: ${2:window.screen.height}, // 输出的图片高度，必填
+  penSize: ${3:2}, // 画笔的粗细，默认值是2(一般)，还有1(粗)，3(细)
+  penColor: ${4:1} // 画笔的颜色，默认值是1(黑)，还有2(蓝)，3(红)
+}, function (res) {
+  // res.resultPath 保存签名图片的路径 系统路径
+  /* res 示例
+    {
+      resultPath: 'kkapp://fil.o-1091-o.kk/storage/sdcard1/Pictures/Drawings/1488260710738.png' // 保存签名图片的路径 系统全路径
+    }
+  */
+  ${5}
+}, function (code, msg) {
+  // -90 参数错误
+  // -3  处理图片错误
+  console.log('获取签名图片失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skmediagetsignimage</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取签名图片</description>
+</snippet>

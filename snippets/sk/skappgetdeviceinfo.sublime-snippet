@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+/* 
+* 获取设备信息，
+* {
+*   os: 'iOS', // 操作系统,可能的值有 iOS/Android/windows(模拟器)
+*   type: 'phone', 类型，phone/pad
+*   pixel: '640x360', // 分辨率，形如:1024x767（大数在前）
+*   largerPixel: '640', // pixel中教大的一边
+*   smallerPixel: '360', // pixel中的较小的一边
+*   deviceID: '58:1f:28:af:14:5d' 设备物理唯一ID
+* }
+*/
+this.\$kk.app.getDeviceInfo();
+]]></content>
+	<tabTrigger>skappgetdeviceinfo</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取设备信息</description>
+</snippet>

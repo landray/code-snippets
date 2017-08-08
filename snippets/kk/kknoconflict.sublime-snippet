@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+// 解决命名冲突, 将全局KK的值改回JS执行之前的值
+kk.noConflict()
+]]></content>
+	<tabTrigger>kknoconflict</tabTrigger>
+	<scope>source.js</scope>
+	<description>解决命名冲突</description>
+</snippet>

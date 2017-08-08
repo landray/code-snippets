@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+// 获取应用数字图标
+this.\$kk.app.getBadge(function (res) {
+  // res.num 返回应用数字图标
+  ${1}
+}, function (code, msg) {
+  console.log('获取应用数字角标失败，错误代码是' + code + '，错误信息' + msg);
+});
+]]></content>
+	<tabTrigger>skappgetbadge</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取应用数字图标</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+// 预览图片
+this.\$kk.media.previewImage({
+  paths: ['${1:sdcard://media/101.jpeg}'], //所要预览图片的地址列表，暂时仅支持传入本地图片地址，填写请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+  current: ${2:0}, // 当前图片的索引(在列表中的序号), 默认是0
+  operations: ${3:false} // 是否提供图片操作菜单(转发到微信或保存到相册)，默认是false
+}, function (code, msg) {
+  // 9 路径参数为空
+  console.log('预览图片失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skmediapreviewimage</tabTrigger>
+	<scope>source.js</scope>
+	<description>预览图片</description>
+</snippet>

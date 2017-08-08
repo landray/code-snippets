@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+/* 
+* 拉起应用
+* 第二个参数 args 可选，可以是任意数据类型，将作为参数传递给被拉起的应用，被拉起应用可在其内部的this.\$kk.ready的回调参数 args.callArgs 拿到此参数
+*/
+this.\$kk.app.callApp({
+  // url 和 code 均选填，不可均为空
+  url: '${1:http://landray.com.cn}', // 应用的启动URL
+  code: '${2:KK-SCHEDULE}' // 应用代码
+}, ${3:args}, function () {
+  // 无回调参数
+  ${4}
+}, function (code, msg) {
+  console.log('callApp出错，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skappcallapp</tabTrigger>
+	<scope>source.js</scope>
+	<description>调用客户端内置的其他混合应用</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+// 判断JS SDK是否运行在kk环境
+// 如果在kk环境，则返回true 
+kk.isKK();
+]]></content>
+	<tabTrigger>kkiskk</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断JS SDK是否运行在kk环境中</description>
+</snippet>

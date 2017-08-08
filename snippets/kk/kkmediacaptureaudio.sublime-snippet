@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+// 录音
+kk.media.captureAudio(function (res) {
+  /*
+    res示例
+    {
+      name：'ekp_1488261335494.amr',//文件名
+      fullPath:'/data/data/com.landray.kkplus/files/ekp_1488261335494.amr',//文件全路径
+      type:'audio/amr',//文件类型
+      size:3654//文件大小，单位字节
+    }
+  */
+  ${1}
+}, function (code, msg) {
+  // ±3 用户取消
+  console.log('录音失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkmediacaptureaudio</tabTrigger>
+	<scope>source.js</scope>
+	<description>录音</description>
+</snippet>

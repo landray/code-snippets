@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[
+//如果多个请求参数相同，可以设置默认参数以简化请求
+var req = kk.proxy.requestSetup({
+  contentType: '${1:json}', // 发送参数时的编码格式，可选值有form/json
+  dataType: '${2:json}', //返回数据格式 可选值有text/json
+  //额外的http头
+  headers: {${3:
+    'Accept-Language': 'zh',
+    'Date': 'HTTP-date'
+  }},
+  // 在发送请求前执行该函数，可选
+  beforeSend: function (options) {
+    // 可在此处修改请求相关参数，比如修改请求地址
+    // options.url = '/api' + options.url;
+    ${4}
+  },
+  //失败回调
+  error: function(code, msg){
+    console.log('错误信息:' + msg + ', 错误代码:' + code);
+  }
+});
+
+//简化后的请求
+req.request({
+  url: '${5:/remote-api-server-url}', //请求的URL
+  // 成功回调
+  success: function (res) {
+    ${6}
+  }
+});
+]]></content>
+	<tabTrigger>kkproxyrequestsetup</tabTrigger>
+	<scope>source.js</scope>
+	<description>设置请求的默认参数</description>
+</snippet>

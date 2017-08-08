@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+// 添加联系人，需要开启KK读写通讯录的权限
+kk.contact.add({
+  // 添加联系人其它信息(如邮箱，地址等)请查看
+  // http://kk5.landray.com.cn:6789/jssdk/index.html#contact
+  name: '${1:xxx}', // 新增的姓名
+  phones: '${2:xxx}' // 新增的电话号码
+}, function () {
+  // 无回调参数
+  ${3}
+}, function (code, msg) {
+  // code:9 msg:操作失败
+  console.log('添加联系人失败，错误信息是' + code '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkcontactadd</tabTrigger>
+	<scope>source.js</scope>
+	<description>添加联系人，需要开启KK读写通讯录的权限</description>
+</snippet>

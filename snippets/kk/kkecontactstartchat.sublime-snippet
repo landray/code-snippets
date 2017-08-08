@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+// 发起与用户的会话    
+// uesrID和loginName选其一传值，如果都传则优先使用userID 
+kk.econtact.startChat({
+  uesrID: '${1:123}', // 用户userID
+  loginName: '${2:zhangsan}', // 登录名loginName
+  words: '${3:我是内容}' // 发送的内容，可选，发起会话成功后内容显示在输入框中
+  }, function () {
+  // 无回调参数
+  ${4}
+}, function (code, msg) {
+  // 991 参数不可用
+  // -2  找不到对应的员工
+  console.log('发起会话失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkecontactstartchat</tabTrigger>
+	<scope>source.js</scope>
+	<description>与其它用户发起会话</description>
+</snippet>

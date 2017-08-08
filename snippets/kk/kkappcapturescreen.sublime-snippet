@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+// 应用截屏
+kk.app.captureScreen({
+  targetWidth: ${1:window.screen.width}, // 输出图片宽 单位px，默认100
+  targetHeight: ${2:window.screen.height}, // 输出图片高 单位px，默认100
+  encodingType: '${3:png}', // 输出格式,可选值:jpeg/png 默认是png 
+  quality: ${4:50}, // 输出图片质量，范围:0-100，默认是50
+  destinationType: '${5:data}', // 输出形式,可选值:file/data，默认是data
+  savePath: '${6}' // 保存路径，destinationType=file时有效，不指定时以随机文件名保存到'sdcard://easymi/'文件夹， 填写请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+}, function (res) {
+  // res.imageURI 截屏后的文件保存路径(当destinationType为file时返回)
+  // res.imageFileOSPath 截屏后的文件保存路径(当destinationType为file时返回)
+  // res.imageData 图片的base64编码(当destinationType为data时返回)
+  ${7}
+}, function (code, msg) {
+  console.log('capatureScreen出错，错误代码是 ' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkappcapturescreen</tabTrigger>
+	<scope>source.js</scope>
+	<description>应用截屏</description>
+</snippet>

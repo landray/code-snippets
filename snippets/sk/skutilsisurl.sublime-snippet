@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+//判断字符串是否为合法的浏览器网址
+this.\$kk.utils.isURL('${1:https://www.abc.com/a?b=123#456}'); // true
+]]></content>
+	<tabTrigger>skutilsisurl</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断字符串是否为合法的浏览器网址</description>
+</snippet>

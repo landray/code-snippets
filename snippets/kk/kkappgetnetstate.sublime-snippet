@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+/* 
+* 获取网络状态
+* {
+*   netState: 1/0; // 1在线；0离线
+* }
+*/
+kk.app.getNetState();
+]]></content>
+	<tabTrigger>kkappgetnetstate</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取网络状态</description>
+</snippet>

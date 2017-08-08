@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+/* 
+* 获取客户端信息 
+* {
+*   name: 'KK 6.0', // 客户端名称
+*   version: 'v6.0.0.R.20170703,0', // 客户端可见版本号
+*   semver: '6.0.0', // 语义化版本号
+*   innerVersion: 'v6.0.0.R.20170703,0', // 客户端内部版本号
+*   corpName: '蓝凌科技', // 企业名称
+*   corpID: '1', // 企业ID
+*   lang: 'zh-CN', // 客户端语言，zh-CN 中文， en-US 英文
+*   webServer: 'http://192.168.2.79:8000/' // kk web server 地址
+* }
+*/
+kk.app.getClientInfo();
+]]></content>
+	<tabTrigger>kkappgetclientinfo</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取客户端信息</description>
+</snippet>

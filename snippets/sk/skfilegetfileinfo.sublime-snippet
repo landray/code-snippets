@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+// 获取文件的基础信息
+// 填写文件路径请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+this.\$kk.file.getFileInfo('${1:sdcard://easymi/1.png}', function (res) {
+  /* res示例
+    {
+      name：'1.png',  //文件名称
+      size: '809', //文件大小
+      lastModifyTime:'20170227160048', //文件最后修改时间
+      path:'/var/mobile/Containers/Data/Application/0D96B6DE-AB92-4D50-A522-26D4E5DDF016/Documents/easymi/1.png',  //文件相对存储路径
+      isDir:false  //是否是文件夹
+    }
+  */
+  ${2}
+}, function (code, msg) {
+  // 1 文件不存在
+  console.log('获取文件的基础信息失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>skfilegetfileinfo</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取文件的基础信息</description>
+</snippet>

@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+// 恢复文件
+// 填写文件路径请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+kk.crypto.restoreFile({
+  obscure: '${1:mykey2}', //密钥
+  sourceFile: '${2:sdcard://output/123.mov}', //源文件路径
+  dealSourceFile: ${3:false}, //是否直接处理源文件，默认是false
+  outputFile: '${4:sdcard://output/xxx.mov}' // 文件输出路径，dealSourceFile 为 true 时，此属性无效
+}, function () {
+  // 无回调参数
+  ${5}
+}, function (code, msg) {
+  // 9 源文件不存在或源文件数据为空
+  console.log('文件解密失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkcryptorestorefile</tabTrigger>
+	<scope>source.js</scope>
+	<description>恢复文件</description>
+</snippet>

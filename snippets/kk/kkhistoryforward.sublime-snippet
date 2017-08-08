@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+// 前进到下一页
+kk.history.forward(function () {
+  // 失败回调，无回调参数
+  ${1}
+});
+]]></content>
+	<tabTrigger>kkhistoryforward</tabTrigger>
+	<scope>source.js</scope>
+	<description>前进到下一页</description>
+</snippet>

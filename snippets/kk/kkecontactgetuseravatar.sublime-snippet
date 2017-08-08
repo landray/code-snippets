@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+// 使用用户信息获取用户头像
+// 如不传参数(loginName)则获取自身头像，头像尺寸为: 120px*120px
+// 也可传userID，传userID则第二个参数要设置为true
+kk.econtact.getUserAvatar('${1:zhangsan}'); // loginName
+]]></content>
+	<tabTrigger>kkecontactgetuseravatar</tabTrigger>
+	<scope>source.js</scope>
+	<description>使用用户信息获取用户头像</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+//返回当前应用的链接
+kk.share.getAppShareLink({
+  data: {${1}}, // 选填，附带参数，进入应用后可在 kk.ready 的参数中获取data的内容
+  targetPlatform: '${2:mobile}', //选填，可打开该应用的目标平台，可选值有 ios (iOS系统), android (安卓系统), mobile (移动端), desktop (PC端), universal (所有平台)，默认值为 mobile
+  targetType: '${3:universal}', //选填，目标平台类型，可选值有 pad (平板类), phone (手机类), universal (通用类)，默认值为 universal
+});
+]]></content>
+	<tabTrigger>kksharegetappsharelink</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取分享链接</description>
+</snippet>

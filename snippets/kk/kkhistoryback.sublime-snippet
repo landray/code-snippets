@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+// 返回到上一页
+kk.history.back(function () {
+  // 失败回调，无回调参数
+  ${1}
+});
+]]></content>
+	<tabTrigger>kkhistoryback</tabTrigger>
+	<scope>source.js</scope>
+	<description>返回到上一页</description>
+</snippet>

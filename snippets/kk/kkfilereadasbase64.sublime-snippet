@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+// 将文件类容转换为base64字符串
+// 填写文件路径请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+kk.file.readAsBase64('${2:sdcard://easymi/test.txt}', function (res) {
+  /* res示例
+    {
+      content: '5oiR5piv5rWL6K+VDQoxMzI=' // base64字符串
+    }
+  */
+  ${5}
+}, function (code, msg) {
+  // 1 文件不存在
+  console.log('将文本转换base64字符串失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkfilereadasbase64</tabTrigger>
+	<scope>source.js</scope>
+	<description>将文件类容转换为base64字符串</description>
+</snippet>

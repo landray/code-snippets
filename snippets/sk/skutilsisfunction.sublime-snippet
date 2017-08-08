@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+//判断变量是否为函数
+this.\$kk.utils.isFunction(${1:function (){\}});  //=> true
+]]></content>
+	<tabTrigger>skutilsisfunction</tabTrigger>
+	<scope>source.js</scope>
+	<description>判断变量是否为函数</description>
+</snippet>

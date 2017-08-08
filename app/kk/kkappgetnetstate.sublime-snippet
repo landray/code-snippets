@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-// 返回网络状态
-var ${1:state} = kk.app.getNetState();
-]]></content>
-	<tabTrigger>kkappgetnetstate</tabTrigger>
-	<scope>source.js</scope>
-	<description>获取网络状态</description>
-</snippet>

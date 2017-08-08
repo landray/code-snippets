@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+/*
+* 取消应用事件监听
+* @eventName： string类型，事件名称
+*  事件名称有：
+*    pause：切换到后台运行
+*    resume：切换到前台运行
+*    exit：应用退出
+*    netStateChange：客户端容器的网络状态变动
+*    back：后退键事件
+*    phoneStateChange：电话状态改变事件
+* @回调函数：回调函数与监听事件的回调函数名字必须保持相同，不能是匿名函数
+*/
+// 取消监听网络状态变动
+kk.app.off('${1:netStateChange}', ${2:eventCB});
+]]></content>
+	<tabTrigger>kkappoff</tabTrigger>
+	<scope>source.js</scope>
+	<description>取消应用事件, 新的快捷方法</description>
+</snippet>

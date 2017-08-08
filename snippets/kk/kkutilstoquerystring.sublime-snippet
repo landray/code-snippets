@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+// 将对象转换为query string,返回由key=value组成的string字符串，每个键值对由&分隔
+kk.utils.toQueryString(${1:{a:1,b:2\}}); // "a=1&b=2"
+]]></content>
+	<tabTrigger>kkutilstoquerystring</tabTrigger>
+	<scope>source.js</scope>
+	<description>将对象转换为query string</description>
+</snippet>

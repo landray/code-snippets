@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+// 获取应用图标url
+// 参数填应用代码，可选，不填则返回本身应用图标url
+kk.app.getAppIcon('${1:appCode}');
+]]></content>
+	<tabTrigger>kkappgetappicon</tabTrigger>
+	<scope>source.js</scope>
+	<description>根据应用代码获取应用图标，若不传参数则返回自身应用的图标</description>
+</snippet>

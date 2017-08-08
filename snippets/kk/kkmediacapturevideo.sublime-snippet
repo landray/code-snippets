@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+// 录制视频, 录制的格式取决于操作系统（Android：3gp格式， IOS：mov格式）
+kk.media.captureVideo({
+  quality: '${1:LOW}', // 录制质量 可选值：LOW，MEDIUM，HIGH，默认是LOW
+  savePath: '${2:sdcard://media/video/test.3gp}', // 要保存的路径 (如果不指定，将使用sdcard://协议保存一个随机文件名)，填写请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+  duration: ${3:10} // 录像时长(单位：秒；如果不指定，则默认长度不做限制)
+}, function (res) { 
+  /*
+    res 示例
+    {
+      endingType:0,//录制结束方式 0：主动结束，1：来电或其他因素打断
+      retCode:0,
+      name:'test.3gp',//文件名
+      fullPath:'sdcard://media/vedio/test.3gp',//文件全路径
+      type:'3gp',//MIME类型
+      lastModifiedData:'2017-02-28 13:51:21',//最后修改的时间
+      size:218488//文件大小，单位为字节
+    }
+  */
+  ${4}
+}, function (code, msg) {
+  // -1 用户取消
+  console.log('录制视频失败，错误代码是' + code + '，错误信息是' + msg);
+});
+]]></content>
+	<tabTrigger>kkmediacapturevideo</tabTrigger>
+	<scope>source.js</scope>
+	<description>录制视频</description>
+</snippet>

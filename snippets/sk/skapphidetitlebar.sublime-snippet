@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+// 隐藏应用容器(webview)的标题栏，同this.\$kk.app.setScreenMode('enhanced');
+this.\$kk.app.hideTitleBar();
+]]></content>
+	<tabTrigger>skapphidetitlebar</tabTrigger>
+	<scope>source.js</scope>
+	<description>隐藏webview标题栏/导航栏</description>
+</snippet>

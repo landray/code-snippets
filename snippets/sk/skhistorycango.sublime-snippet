@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+// 获取当前页面可以前进及后退的页数
+this.\$kk.history.canGo(function (res) {
+  /* res示例
+  {
+    canGoBack: false, // 是否能够后退，false表示不能
+    canGoForward: true // 是否能能够前进， true表示可以前进
+  }
+  */
+  ${1}
+});
+]]></content>
+	<tabTrigger>skhistorycango</tabTrigger>
+	<scope>source.js</scope>
+	<description>获取当前页面可以前进及后退的页数</description>
+</snippet>

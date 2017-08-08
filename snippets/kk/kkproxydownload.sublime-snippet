@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+// 文件下载
+// 使用该能力必须先在KK管理台/应用管理/对应应用的设置中设置 资源上传下载地址，下面的url地址均是相对于该地址，文档可查阅 http://kk5.landray.com.cn:6789/jssdk/index.html#proxy
+var fileDownload = new kk.proxy.Download({
+  url: '${1:/download/test.txt}', //文件在服务器的地址
+  path: '${2:sdcard://easymi/download.txt}', //文件保存到本地的地址，用法请参考 http://kk5.landray.com.cn:6789/jssdk/index.html#file-paths
+  isContinuous: ${3:false} //是否断点续传，默认是false
+}, function (res) {
+  /* res 示例
+    {
+      progress: 100, //文件已下载进度，0-100，当下载至100时表示下载完成
+      path: 'sdcard://easymi/download.txt' // 文件在本地的地址，下载完成时才会有该属性
+    }
+  */ 
+  ${4}
+}, function (code, msg) {
+  // -210 一般是没有填写资源上传下载地址
+  console.log('下载文件失败，错误代码是' + code + '，错误信息是' + msg);
+});
+// 下载开始
+fileDownload.start(); 
+${5}
+]]></content>
+	<tabTrigger>kkproxydownload</tabTrigger>
+	<scope>source.js</scope>
+	<description>文件下载</description>
+</snippet>
